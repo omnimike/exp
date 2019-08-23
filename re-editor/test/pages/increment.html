@@ -1,0 +1,12 @@
+<!doctype html>
+
+<div id="app"></div>
+<script src="incrementApp.js"></script>
+<script>
+    const rootEl = document.getElementById('app');
+    if (rootEl !== null) {
+        window.app = IncrementApp(rootEl);
+    } else {
+        console.error('app element not found');
+    }
+</script>

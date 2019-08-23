@@ -1,0 +1,9 @@
+
+How to design a chatbot
+
+# Define the scope of a bot
+# Create a persona
+# botmock, lucid chart
+# task-lead vs topic lead conversations
+# Make sure the greeting important (make sure people know it's a bot)
+# Make a good "I don't know" response

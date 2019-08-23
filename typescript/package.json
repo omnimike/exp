@@ -1,0 +1,30 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "$npm_execpath run build && node dist/index.js",
+    "prettier": "prettier --config ./.prettierrc.json --write ./src/**/*.ts",
+    "tslint": "tslint ./src/**/*.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "express": "^4.16.4",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  },
+  "importSort": {
+    ".js, .jsx, .es6, .es": {
+      "parser": "babylon",
+      "style": "renke"
+    },
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "renke"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+base:
+  '*':
+    - tmux
+    - git
+    - nginx

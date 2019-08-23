@@ -1,0 +1,8 @@
+let &path .= 'bazel-algos/external/googletest/googletest/include,'
+let &path .= 'bazel-algos/external/googletest/googlemock/include,'
+
+let g:syntastic_cpp_include_dirs = [
+            \ 'bazel-algos/external/googletest/googletest/include',
+            \ 'bazel-algos/external/googletest/googlemock/include'
+            \ ]
+

@@ -1,0 +1,11 @@
+
+[ignore]
+
+[options]
+# webpack loaders
+module.name_mapper='.*\.css$' -> '<PROJECT_ROOT>/client/types/StyleBundleType.js'
+module.name_mapper='.*\.scss$' -> '<PROJECT_ROOT>/client/types/StyleBundleType.js'
+
+[libs]
+
+[include]

@@ -1,0 +1,25 @@
+
+Installing salt on centos
+yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm 
+yum install salt-master
+yum install salt-minion
+
+systemctl start salt-master
+
+Edit the /etc/salt/minion file to point to localhost
+systemctl start salt-minion
+
+Accept the salt minion's keys
+salt-key -L
+salt-key -A
+
+This is needed for certbot
+yum install epel-release
+yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional
+yum install certbot
+
+certbot certonly --standalone --no-eff-email --agree-tos -m michael.fulthorp@gmail.com -d omnimike.net
+
+# set up selinux
+semanage fcontext --add --type httpd_sys_content_t "/srv/www(/.*)?"
+restorecon -Rv /srv/www

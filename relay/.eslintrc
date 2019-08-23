@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": 1,
+    "browser": 1,
+    "es6": true
+  },
+  "globals": {},
+  "rules": {
+    "eqeqeq": 1
+  },
+  "plugins": [
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "es2015-rollup",
+    "react"
+  ],
+  "plugins": [
+    "transform-flow-strip-types",
+    "transform-class-properties",
+    "transform-react-jsx"
+  ]
+}
