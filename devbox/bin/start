@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+if [[ ! -f "./ssh/authorized-keys" ]]; then
+  bin/genkey
+fi
+docker-compose up -d --no-recreate

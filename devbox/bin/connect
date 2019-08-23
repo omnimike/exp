@@ -1,0 +1,4 @@
+#!/bin/bash
+
+set -euo pipefail
+ssh localhost -p 2222 -i ~/.ssh/devbox -l root

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  devbox:
+    build: .
+    ports:
+      - "2222:2222"
+    volumes:
+      - ~/code:/root/code
+      - ~/conf:/root/conf
+      - ~/notes:/root/notes

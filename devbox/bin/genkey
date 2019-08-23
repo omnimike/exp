@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+rm -f ~/.ssh/devbox
+rm -f ~/.ssh/devbox.pub
+ssh-keygen -t rsa -f ~/.ssh/devbox
+cp ~/.ssh/devbox.pub ./ssh/authorized-keys

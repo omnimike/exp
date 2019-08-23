@@ -1,4 +1,8 @@
 
+hn/vendor
+hn/build
+
+
 # Created by https://www.gitignore.io/api/go,vim,c++,node,rust,swift,macos,python,haskell,vagrant,intellij,sublimetext,jupyternotebooks
 # Edit at https://www.gitignore.io/?templates=go,vim,c++,node,rust,swift,macos,python,haskell,vagrant,intellij,sublimetext,jupyternotebooks
 

@@ -1,0 +1,6 @@
+
+PermitRootLogin prohibit-password
+PasswordAuthentication no
+HostKey /etc/ssh/ssh_host_rsa_key
+AuthorizedKeysFile /etc/ssh/authorized-keys
+Port 2222
